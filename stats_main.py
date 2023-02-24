@@ -64,6 +64,14 @@ class Stats:
         var_row = self.cost_df.var(axis=1, numeric_only=True)
         var_row = var_row.tolist()
 
+        # calculando máximo e mínimos
+        min_row = self.cost_df.min(axis=1, numeric_only=True)
+        min_row = min_row.tolist()
+        max_row = self.cost_df.max(axis=1, numeric_only=True)
+        max_row = max_row.tolist()
+
+        self.cost_df["Min"] = min_row
+        self.cost_df["Max"] = max_row
         self.cost_df["Mean"] = mean_row
         self.cost_df["Std"] = std_row
         self.cost_df["Var"] = var_row
