@@ -1,9 +1,3 @@
-'''
-Ideia: quando eu passar o CSV ele vai ter só o nome da instância e o valor do custo junto com o tempo de execução necessário
-Assim, a cada execução do meu código eu adiciono uma coluna no meu DataFrame, e salvo no .csv
-Ao final, eu só chamo a função ini() e inicializo os DataFrames, podendo pedir a média, desvio padrão, variância e um
-gráfico de dispersão dos meus dados para cada instância
-'''
 
 import pandas as pd
 import sys
